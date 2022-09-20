@@ -1,0 +1,115 @@
+$yellow:#f5d300;
+$soft_black: #292929;
+$soft_black_08: #292929CC;
+$black: #191919;
+$gray: #757474;
+$white: #ffffff;
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: $yellow;
+  font-family: 'Inter', sans-serif;
+}
+.devonux-navigation {
+  position: absolute;
+  top: 36px;
+  right: 36px;
+  background-color: $soft_black;
+  z-index: 2;
+}
+
+.devonux-main-box {
+  .devonux-intro-block {
+    height: 100vh;
+    padding-top: 300px;
+    padding-left: 250px;
+  
+    .devonux-h2-title{
+      position: relative;
+      color: $black;
+      font-weight: 900;
+      font-size: 3.6rem;
+      letter-spacing: 2px;
+      margin-bottom: 0;
+  
+      &::before{
+        background-color: $soft_black;
+        height: 10px;
+        width: 115px;
+        display: block;
+        position: absolute;
+        left: 2px;
+        top: -20px;
+        content: "";
+      }
+  
+      &::after{
+        background-color: $soft_black;
+        height: 10px;
+        width: 115px;
+        display: block;
+        position: absolute;
+        left: 2px;
+        bottom: -63px;
+        content: "";
+      }
+    }
+    
+    .devonux-intro {
+      margin: auto;
+      color: $soft_black;
+      font-weight: 900;
+      font-size: 2.4rem;
+      letter-spacing:2px;
+      margin-top: -12px;
+      margin-left: 1px;
+    }
+
+    .devonux-intro-dot1 {
+      position: absolute;
+      background: $soft_black_08;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      left: calc(100% - 50%);
+      top: calc(100vh - 110px);
+    }
+
+    .devonux-intro-dot2 {
+      position: absolute;
+      background: $soft_black;
+      opacity: .5;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      left: calc(100% - 50%);
+      top: calc(100vh - 90px);
+    }
+
+    .devonux-intro-dot3 {
+      position: absolute;
+      background: $soft_black_08;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      left: calc(100% - 50%);
+      top: calc(100vh - 70px);
+    }
+
+    .devonux-intro-v-text{
+      position: absolute;
+      color: $soft_black_08;
+      left: 49%;
+      top: calc(100vh - 110px);
+      font-size: 7px;
+      font-weight: 800;
+      writing-mode: tb-rl;
+      transform: rotate(-180deg);
+    }
+  }
+}
