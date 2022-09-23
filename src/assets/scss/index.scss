@@ -4,6 +4,8 @@ $soft_black_08: #292929CC;
 $black: #191919;
 $gray: #757474;
 $white: #ffffff;
+$dark_white: #DEF2F1;
+$secondary_yellow: #fea729;
 
 
 html {
@@ -16,7 +18,7 @@ body {
   font-family: 'Inter', sans-serif;
 }
 .devonux-navigation {
-  position: absolute;
+  position: fixed;
   top: 36px;
   right: 36px;
   background-color: $soft_black;
@@ -111,5 +113,110 @@ body {
       writing-mode: tb-rl;
       transform: rotate(-180deg);
     }
+  }
+
+  .devonux-we-believe{
+    padding: 124px;
+    background-color: $black;
+
+    .devonux-we-believe-block{
+      max-width: 884px;
+
+      .dvnx-span-text{
+        color: $dark_white;
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        font-weight: 100;
+        letter-spacing: .8px;
+      }
+
+      .dvnx-h4{
+        margin-top: 24px;
+        color: $dark_white;
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+        font-weight: 300;
+        letter-spacing: .8px;
+
+        .dvnx-span-strong{
+          color: $secondary_yellow;
+        }
+      }
+    }
+  }
+
+  .devonux-skills{
+    padding: 124px;
+    background-color: $white;
+
+    .dvnx-skills-box{
+      position: relative;
+      background-image: url(../images/lights.jpg);
+      background-size: cover;
+      background-position: center;
+      border-radius: 24px;
+      width: 100%;
+      min-height: 550px;
+
+      .dvnx-skills-box-inner {
+        position: absolute;
+        background-color: $soft_black;
+        opacity: .6;
+        width: inherit;
+        min-height: 550px;
+        border-radius: 24px;
+      }
+
+      .dvnx-h4{
+        margin-top: 24px;
+        color: $white;
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+        font-weight: 300;
+        letter-spacing: .8px;
+      }
+    }
+  }
+
+  .devonux-us-block{
+    min-height: 550px;
+    width: 100%;
+    margin: 48px 0;
+    padding: 48px;
+    display: block;
+
+    .dvnx-us-block-title{
+      font-size: 3.2rem;
+      font-weight: 100;
+      color: $white;
+      display: block;
+      text-align: center;
+      background-color: $black;
+      margin: 16px auto;
+      width: fit-content;
+      padding: 0 16px;
+
+    }
+
+    .slant-1{
+      transform: rotate(-4deg) translateY(0.1em);
+    }
+
+    .slant-2{
+      transform: rotate(3deg) translateY(0.1em);
+    }
+
+    .slant-3{
+      transform: rotate(-1deg) translateY(0.1em);
+    }
+
+    .slant-4{
+      transform: rotate(2deg) translateY(0.1em);
+    }
+
+    .slant-5{
+      transform: rotate(-1deg) translateY(0.1em);
+    }
+
   }
 }

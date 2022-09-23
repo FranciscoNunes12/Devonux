@@ -51,3 +51,15 @@ var handleText = function () {
 $(document).ready(function () {
   handleText();
 });
+
+/*$(window).on('scroll', function(){
+  if ($(".dvnx-us-block-title").is(':visible')){
+      
+    //var dvnx = $('.dvnx-us-block-title').text();
+
+    //$('.dvnx-us-block-title').text(dvnx.substring(0, 1) + 'e' + dvnx.substring(1)).fadeIn(500);
+    //$('.dvnx-us-block-title').text(dvnx.substring(2, 3) + 'o' + dvnx.substring(3)).fadeIn(500);
+    //$('.dvnx-us-block-title').text(dvnx.substring(4, 5) + 'u' + dvnx.substring(5)).fadeIn(500);
+  }
+});*/
+
