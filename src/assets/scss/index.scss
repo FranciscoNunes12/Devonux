@@ -118,9 +118,26 @@ body {
   .devonux-we-believe{
     padding: 124px;
     background-color: $black;
+    position: relative;
+    height: 600px;
+    max-height: 600px;
+    display: table;
+    width: 100%;
+
+    .devonux-we-believe-bg-img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      opacity: .2;
+      width: 100%;
+      height: 600px;
+    }
 
     .devonux-we-believe-block{
       max-width: 884px;
+      display: table-cell;
+      vertical-align: middle;
 
       .dvnx-span-text{
         color: $dark_white;
@@ -148,32 +165,148 @@ body {
   .devonux-skills{
     padding: 124px;
     background-color: $white;
+    width: 100%;
+    min-height: 800px;
+    position: relative;
 
-    .dvnx-skills-box{
+    .devonux-skills-hex {
+      width: 400px;
+      height: 650px;
       position: relative;
-      background-image: url(../images/lights.jpg);
-      background-size: cover;
-      background-position: center;
-      border-radius: 24px;
-      width: 100%;
-      min-height: 550px;
 
-      .dvnx-skills-box-inner {
+      .dvnx-hexagon-center{
+        height: 200px;
+        width: 200px;
         position: absolute;
-        background-color: $soft_black;
-        opacity: .6;
-        width: inherit;
-        min-height: 550px;
-        border-radius: 24px;
+        left: 38%;
+        top: 25.7%;
+
+        polygon {
+          stroke: $soft_black !important;
+          stroke-width: 5 !important;
+        }
+  
+        &:hover{
+          polygon {
+            stroke-width: 10 !important;
+          }
+        }
+      }
+  
+      .dvnx-hexagon-center-top{
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 0%;
+        top: 12%;;
+        margin: 0;
+
+        polygon {
+          stroke: $black !important;
+          stroke-width: 5 !important;
+        }
+
+        &:hover{
+          polygon {
+            stroke-width: 10 !important;
+          }
+        }
+      }
+  
+      .dvnx-hexagon-center-bottom{
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 38%;
+        bottom: 16.5%;
+        margin: 0;
+
+        polygon {
+          stroke: $soft_black !important;
+          stroke-width: 5 !important;
+        }
+
+        &:hover{
+          polygon {
+            stroke-width: 10 !important;
+          }
+        }
+      }
+  
+      .dvnx-hexagon-center-left-b{
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 0%;
+        bottom: 30%;
+
+        polygon {
+          stroke: $black !important;
+          stroke-width: 5 !important;
+        }
+
+        &:hover{
+          polygon {
+            stroke-width: 10 !important;
+          }
+        }
       }
 
-      .dvnx-h4{
-        margin-top: 24px;
-        color: $white;
-        font-size: 2.2rem;
-        line-height: 3.2rem;
-        font-weight: 300;
-        letter-spacing: .8px;
+      .dvnx-hexagon-center-down{
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 114%;
+        bottom: 16.5%;
+
+        polygon {
+          stroke: $black !important;
+          stroke-width: 5 !important;
+        }
+
+        &:hover{
+          polygon {
+            stroke-width: 10 !important;
+          }
+        }
+      }
+
+      .dvnx-hexagon-center-down-l{
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 76%;
+        bottom: 30%;
+
+        polygon {
+          stroke: $black !important;
+          stroke-width: 5 !important;
+        }
+
+        &:hover{
+          polygon {
+            stroke-width: 10 !important;
+          }
+        }
+      }
+
+      .dvnx-hexagon-center-down-r{
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 152%;
+        bottom: 30%;
+
+        polygon {
+          stroke: $black !important;
+          stroke-width: 5 !important;
+        }
+
+        &:hover{
+          polygon {
+            stroke-width: 10 !important;
+          }
+        }
       }
     }
   }
